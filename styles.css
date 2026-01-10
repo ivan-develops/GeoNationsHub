@@ -3,6 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+.header {
+    background: url(img/banner-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20em;
+}
+.contenedor {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+}
+.header__logo {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+
+}
 .bandera {
     width: 3rem;
+}
+.btnRegion {
+    border-radius: 1rem;
+    padding: 1rem;
+
 }
