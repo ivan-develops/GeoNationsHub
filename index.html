@@ -8,10 +8,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="main">
-        <h1>GeoNationHub</h1>
+    <header class="header">
         <div class="contenedor">
-            <button type="button" class="btnMostrar" id="btnMostrar">Muestrame países</button>
+            <img class="header__logo" src="img/logo-GeoNationsHub.png" alt="logo GeoNationHub">
+            <h2 class="header__text">Where do you want to go?</h2>
+            <div class="contenedor-buscar">
+                <input type="text" id="btnBuscar" placeholder="Ingresa el pais que buscas">
+                <button type="button" class="btnMostrar" id="btnMostrar">Muestrame países</button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="contenedor">
+            <div class="contenedor-regiones">
+                <button type="button" class="btnRegion">América</button>
+                <button type="button" class="btnRegion">Asia</button>
+                <button type="button" class="btnRegion">Europa</button>
+                <button type="button" class="btnRegion">Oceanía</button>
+            </div>
+
             <div class="contenedorPaises" id="contenedorPaises">
                 <!-- <div class="card">
                     <img src="${pais.flags.svg}" alt="Bandera de ${pais.name.common}" class="bandera">
@@ -20,6 +35,7 @@
                     <p>${pais.population}</p>
                 </div> -->
             </div>
+            
         </div>
     </main>
 </body>
