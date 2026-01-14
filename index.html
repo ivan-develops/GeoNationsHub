@@ -11,22 +11,22 @@
     <header class="header">
         <div class="contenedor">
             <img class="header__logo" src="img/logo-GeoNationsHub.png" alt="logo GeoNationHub">
-            <h2 class="header__text">Where do you want to go?</h2>
+            <h2 class="header__text">Where do you<br> want to go?</h2>
             <div class="contenedor-buscar">
-                <input type="text" id="btnBuscar" placeholder="Ingresa el pais que buscas">
+                <input type="text" id="inputBuscar" class="inputBuscar" placeholder="Ingresa el pais que buscas">
                 <button type="button" class="btnMostrar" id="btnMostrar">Muestrame países</button>
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="contenedor">
+        
             <div class="contenedor-regiones">
                 <button type="button" class="btnRegion">América</button>
                 <button type="button" class="btnRegion">Asia</button>
                 <button type="button" class="btnRegion">Europa</button>
                 <button type="button" class="btnRegion">Oceanía</button>
             </div>
-
+        
             <div class="contenedorPaises" id="contenedorPaises">
                 <!-- <div class="card">
                     <img src="${pais.flags.svg}" alt="Bandera de ${pais.name.common}" class="bandera">
@@ -34,9 +34,38 @@
                     <p>${pais.capital}</p>
                     <p>${pais.population}</p>
                 </div> -->
+                <article class="card">
+                    <img src="https://flagcdn.com/ag.svg" alt="Bandera de Antigua and Barbuda" class="bandera">
+                    <h3 class="nombre">Antigua and Barbuda</h3>
+                    <p>Capital: Saint John's</p>
+                    <p>Población: 103.603</p>
+                    <p>region: Americas</p>
+                </article>
+                <article class="card">
+            <img src="https://flagcdn.com/bt.svg" alt="Bandera de Bhutan" class="bandera">
+            <h3 class="nombre">Bhutan</h3>
+            <p>Capital: Thimphu</p>
+            <p>Población: 784.043</p>
+            <p>region: Asia</p>
+        </article>
+        <article class="card">
+            <img src="https://flagcdn.com/it.svg" alt="Bandera de Italy" class="bandera">
+            <h3 class="nombre">Italy</h3>
+            <p>Capital: Rome</p>
+            <p>Población: 58.927.633</p>
+            <p>region: Europe</p>
+        </article>
+        <article class="card">
+            <img src="https://flagcdn.com/au.svg" alt="Bandera de Australia" class="bandera">
+            <h3 class="nombre">Australia</h3>
+            <p>Capital: Canberra</p>
+            <p>Población: 27.536.874</p>
+            <p>region: Oceania</p>
+        </article>
+
             </div>
             
-        </div>
+        
     </main>
 </body>
 </html>
