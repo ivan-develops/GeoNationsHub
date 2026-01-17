@@ -35,11 +35,11 @@ function renderizarPaises(paises) {
         const card = document.createElement('article');
         card.classList.add('card');
         card.innerHTML = `
-            <img src="${pais.flags.svg}" alt="Bandera de ${pais.name.common}" class="bandera">
-            <h3 class="nombre">${pais.name.common}</h3>
-            <p>Capital: ${pais.capital}</p>
-            <p>Población: ${pais.population.toLocaleString('es-CO')}</p>
-            <p>region: ${pais.region}</p>
+        <h3 class="nombre">${pais.name.common}</h3>
+        <p>Capital: ${pais.capital}</p>
+        <p>Población: ${pais.population.toLocaleString('es-CO')}</p>
+        <p>Region: ${pais.region}</p>
+        <img src="${pais.flags.svg}" alt="Bandera de ${pais.name.common}" class="bandera">
         `;
         contenedorPaises.appendChild(card);
     });
