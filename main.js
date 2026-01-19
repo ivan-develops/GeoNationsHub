@@ -35,14 +35,26 @@ function renderizarPaises(paises) {
         const card = document.createElement('article');
         card.classList.add('card');
         card.innerHTML = `
-        <h3 class="nombre">${pais.name.common}</h3>
-        <p>Capital: ${pais.capital}</p>
-        <p>Población: ${pais.population.toLocaleString('es-CO')}</p>
-        <p>Region: ${pais.region}</p>
-        <img src="${pais.flags.svg}" alt="Bandera de ${pais.name.common}" class="bandera">
+            <img src="${pais.flags.svg}" alt="Bandera de ${pais.name.common}" class="bandera">
+            <h3 class="nombre">${pais.name.common}</h3>
+            <p>Capital: ${pais.capital}</p>
+            <p>Población: ${pais.population.toLocaleString('es-CO')}</p>
+            <p>Region: ${pais.region}</p>
         `;
         contenedorPaises.appendChild(card);
     });
 }
 
+
+const contenedorRegiones = document.getElementById('contenedorRegiones');
+
 btnMostrar.addEventListener( 'click' , consultarPaises );
+
+function seleccionRegion (){
+    contenedorRegiones.forEach((region, indice) =>{
+        region.addEventListener( 'click' , (e)=> {
+            console.log( e.target);
+            console.log('selecionaste boton de region');
+        })
+    }
+}
