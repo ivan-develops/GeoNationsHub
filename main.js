@@ -50,11 +50,3 @@ const contenedorRegiones = document.getElementById('contenedorRegiones');
 
 btnMostrar.addEventListener( 'click' , consultarPaises );
 
-function seleccionRegion (){
-    contenedorRegiones.forEach((region, indice) =>{
-        region.addEventListener( 'click' , (e)=> {
-            console.log( e.target);
-            console.log('selecionaste boton de region');
-        })
-    }
-}
