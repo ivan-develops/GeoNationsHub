@@ -48,5 +48,27 @@ function renderizarPaises(paises) {
 
 const contenedorRegiones = document.getElementById('contenedorRegiones');
 
+contenedorRegiones.addEventListener('click' , (e)=> {
+    
+    const btnRegionSeleccionada = e.target.closest('.btnRegion');
+    console.log(btnRegionSeleccionada);
+
+    if(btnRegionSeleccionada.textcontent === 'Europa'){
+        console.log('seleccionaste Europa');
+    }
+})
+
+function buscarPais(palabra) {
+
+}
+
+function seleccionarRegion(){
+    
+    renderizarPaises(paises);
+
+}
+
 btnMostrar.addEventListener( 'click' , consultarPaises );
 
+
+// btnMostrar.addEventListener( 'click' , consultarPaises );
